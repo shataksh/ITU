@@ -8,7 +8,8 @@ Item {
   signal mouseClick
 
   function imgSrc(mode) {
-    return "../../../img/menu/" + myMenu.icon + mode.toString() + ".png"
+    return "../menu_icon/" + myMenu.icon + mode.toString() + ".png"
+    //return "../../../img/menu/" + myMenu.icon + mode.toString() + ".png"
   }
 
   Rectangle {

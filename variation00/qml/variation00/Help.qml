@@ -1,32 +1,36 @@
 import QtQuick 1.0
 import QtWebKit 1.0
 
-Rectangle {
-  id: myHelp
-  width: 100
-  height: 62
-  anchors.fill: parent
+Flickable {
+  id: myFlickable
+  interactive: true
+  property alias myUrl: web00.url
+  property variant rectBase: parent
 
-  Flickable {
-    id: wtf00
-    width: parent.width
-    height: parent.height
-    contentWidth: web00.width
-    contentHeight: web00.height
-    interactive: true
-    anchors {
-      left:parent.left
-    }
+  //width: rectBase.width
+  //height: rectBase.height
+  //contentWidth: rectBase.width
+  contentHeight: rectBase.height
+  //anchors {
+  //  left:parent.left
+  //}
 
-    WebView {
-      id: web00
-      url: Qt.resolvedUrl( "html/shop.html" )
-      width: flashingblob.width
-      //height: win_main.height
-      //preferredWidth: flickable.width
-      //preferredHeight: flickable.height
-      x: 0
-      y: 0
-    }
+  anchors {
+    fill: rectBase
+    leftMargin: 70
+    rightMargin: 70
+    bottomMargin: 70
+    topMargin: 70
+  }
+
+  WebView {
+    id: web00
+    url: Qt.resolvedUrl( "html/help.html" )
+    //width: flashingblob.width
+    //height: win_main.height
+    preferredWidth: myFlickable.width
+    preferredHeight: myFlickable.height
+    //x: 0
+    //y: 0
   }
 }

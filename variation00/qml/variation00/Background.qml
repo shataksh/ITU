@@ -16,7 +16,7 @@ Rectangle {
   }
 
   function randomImage() {
-    return "../../img/background/"+Math.floor((Math.random()*13)+1)+".jpg";
+    return "background_img/"+Math.floor((Math.random()*13)+1)+".jpg";
   }
 
   Timer {
