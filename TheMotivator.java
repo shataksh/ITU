@@ -12,11 +12,29 @@ public class TheMotivator {
 			System.out.println("That's good ");
 		else
 			System.out.println("Well, what can I say?");
+
+		for (String event : events)
+			System.out.println(event);
+
+
 	}
+
+
+	public void createEvents() {
+		events.add("We're going to a movie on Saturday");
+		events.add("Study session on Sunday - Jim's house");
+	}
+
+
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
+
+		private ArrayList<String> events = new ArrayList<String>();
+
 		tm.feedback(60);
 		tm.upcomingEvents();
+		tm.createEvents();
+
 	}
 }
 
