@@ -1,4 +1,8 @@
 public class TheMotivator {
+	public void upcomingEvents() {
+	System.out.println("Party at Jane's house tomorrow");
+}
+
 	public void thoughtForDay(int score) {
 		if (score == 100)
 			System.out.println("You're awesome");
