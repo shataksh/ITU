@@ -1,6 +1,6 @@
 public class TheMotivator {
 	public void upcomingEvents() {
-	System.out.println("Party at Jane's house tomorrow");
+	System.out.println("Dinner at Katie's on Friday");
 }
 
 	public void thoughtForDay(int score) {
