@@ -1,1 +1,3 @@
+Adding change to show git merge approach
+Another change
 Sample file for git branch
