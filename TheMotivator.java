@@ -1,4 +1,8 @@
 public class TheMotivator {
+	public void upcomingEvents() {
+	System.out.println("Party at Jane's house tomorrow");
+}
+
 	public void thoughtForDay(int score) {
 		if (score == 100)
 			System.out.println("You're awesome!!!");
@@ -12,6 +16,7 @@ public class TheMotivator {
 	public static void main(String[] args) {
 		TheMotivator tm = new TheMotivator();
 		tm.feedback(60);
+		tm.upcomingEvents();
 	}
 }
 
